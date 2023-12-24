@@ -1,0 +1,183 @@
+body {
+  background-color: #e2e5ec;
+  color: #37515f;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-image: url("gif.gif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* This is the key property for a fixed background */
+}
+
+/* body {
+  background: url('background.png') no-repeat center center fixed;
+  background-size: cover;
+  background-color: #f0f0f0;
+} */
+.my_container {
+  display: flex;
+  align-items: center;
+}
+
+.image-container {
+  flex: 1;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  width: 100px; /* Set the desired width for your avatar */
+  height: 100px; /* Set the desired height for your avatar */
+  border-radius: 50%;
+}
+
+.text-container {
+  flex: 9;
+}
+
+/* Additional styles to reset margin and padding for figure */
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+.text-color {
+  color: #334058;
+}
+
+.nav-bg-color {
+  background-color: #4d5b75;
+}
+
+.nav-size {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 1%;
+  padding-right: 5%;
+}
+
+.text-nav {
+  color: #e2e5ec;
+  font-weight: light;
+}
+
+.name-greet {
+  font-weight: bolder;
+}
+
+.home {
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha value for transparency */
+}
+
+.projects {
+  height: 70vh;
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha value for transparency */
+}
+
+.showcase1 {
+  width: 400px;
+}
+
+.projects-img {
+  width: 200px;
+}
+
+.showcase1-content {
+  padding-top: 100px;
+}
+
+.typewriter-text {
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  display: inline-block;
+  border-right: 0.15em solid #e2e5ec;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end) 0s forwards, blink-caret 0.75s step-end infinite;
+}
+
+.typewriter-text:nth-child(2) {
+  animation-delay: 4s; /* Delay the start of the second sentence typing */
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #e2e5ec;
+  }
+}
+.hover-container img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-container:hover img {
+  transform: scale(1.2); /* Adjust the scale factor as needed */
+}
+
+.fade-container {
+  opacity: 0; /* Initially set opacity to 0 */
+  transition: opacity 1s ease; /* Apply a smooth transition effect */
+}
+
+.fade-in {
+  opacity: 1; /* Set opacity to 1 when the 'fade-in' class is added */
+}
+
+li:hover {
+  text-decoration: underline solid #e2e5ec;
+  color: #5c606b;
+  cursor: pointer;
+}
+
+.icon-container i {
+  color: #e2e5ec;
+}
+
+.content {
+  display: none;
+  margin-top: 20px;
+  opacity: 0;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.content.active {
+  display: block;
+  opacity: 1;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+marquee::first-letter {
+  color: #e78b3a; /* Replace with your desired color code */
+}
+
+marquee {
+  color: #334058;
+}
+
+.about-me {
+  color: #334058;
+}
+
+.footer {
+  height: 40vh;
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust the alpha value for transparency */
+}
+
+/*# sourceMappingURL=style.css.map */
